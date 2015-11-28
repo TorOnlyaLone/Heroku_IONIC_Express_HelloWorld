@@ -1,4 +1,8 @@
-angular.module('starter', ['ionic','starter.routes','starter.controllers']);
+angular.module('starter', ['ionic','starter.routes','starter.controllers'])
+.config(['$ionicConfigProvider', function($ionicConfigProvider) {
+    $ionicConfigProvider.tabs.position('bottom'); // other values: top
+}]);
+
 
 /*
 .run(function($ionicPlatform) {
